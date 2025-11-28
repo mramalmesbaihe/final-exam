@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #6a11cb, #2575fc);
+    background: linear-gradient(to right, #c2bfa8, #885e02);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,10 +9,10 @@ body {
 }
 
 .singup-container {
-    background-color: rgba(250, 250, 250, 0.192);
+    background-color: rgba(250, 250, 250, 0.027);
     padding: 30px 70px;
     border-radius: 30px;
-    box-shadow: 0 8px 16px rgba(211, 86, 228, 0.514);
+    box-shadow: 0 8px 16px rgb(70, 63, 5);
     width: 300px;
     text-align: center;
 }
@@ -21,7 +21,7 @@ body {
     margin-bottom: 20px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30Px;
-    color: #f0e8e8;
+    color: #000000;
 }
 
 .singup-container input {
@@ -29,14 +29,14 @@ body {
     padding: 10px;
     margin: 20px 3px;
     border-radius: 10px;
-    border: 1px solid hsl(0, 14%, 89%);
+    border: 1px solid hsl(46, 100%, 29%);
 }
 
 .singup-container button {
     width: 100%;
     padding: 10px;
-    background-color: hsla(263, 55%, 69%, 0.418);
-    color: rgb(8, 8, 8);
+    background-color: hsla(49, 92%, 20%, 0.801);
+    color: rgb(255, 254, 254);
     font-size: 20px;
     border: none;
     border-radius: 10px;
@@ -44,15 +44,15 @@ body {
 }
 
 .singup-container button:hover {
-    background-color: #a79aad;
+    background-color: #000000;
 }
 
 
 .login-container {
-    background-color: rgba(250, 250, 250, 0.192);
+    background-color: rgba(250, 250, 250, 0.027);
     padding: 30px 70px;
     border-radius: 30px;
-    box-shadow: 0 8px 16px rgba(211, 86, 228, 0.514);
+    box-shadow: 0 8px 16px rgb(70, 63, 5);
     width: 300px;
     text-align: center;
 }
@@ -61,7 +61,7 @@ body {
     margin-bottom: 20px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30Px;
-    color: #f0e8e8;
+    color: #000000;
 }
 
 .login-container input {
@@ -69,14 +69,14 @@ body {
     padding: 10px;
     margin: 20px 3px;
     border-radius: 10px;
-    border: 1px solid hsl(0, 14%, 89%);
+    border: 1px solid hsl(46, 100%, 29%);
 }
 
 .login-container button {
     width: 100%;
     padding: 10px;
-    background-color: hsla(263, 55%, 69%, 0.418);
-    color: rgb(8, 8, 8);
+    background-color: hsla(49, 92%, 20%, 0.801);
+    color: rgb(255, 254, 254);
     font-size: 20px;
     border: none;
     border-radius: 10px;
@@ -84,7 +84,7 @@ body {
 }
 
 .login-container button:hover {
-background-color: #a79aad;
+background-color: #000000;
 }
 
 .login-container p {
@@ -93,6 +93,6 @@ background-color: #a79aad;
 }
 
 .login-container a {
-    color: #f79c72;
+    color: #fff8f4;
     text-decoration: none;
 }
