@@ -18,7 +18,7 @@ color: #965d07;
 }
 header {
     background: #9c7c41; 
-    padding: 15px 20px; 
+    padding: 5px 20px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,6 +52,11 @@ header nav a:hover {
 }
 
 .card1 {
+ margin-top: 40px; /* مسافة بين الهيرو والكارد */
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto; /* يخليه بالنص */
+  padding: 40px;
   box-sizing: border-box;
   width: 100%;
   height: 454px;
@@ -72,7 +77,7 @@ header nav a:hover {
   padding: 40px;
 }
 
-.card1-content {
+.card-content {
   width: 100%;
   height: 100%;
   display: flex;
@@ -86,12 +91,15 @@ header nav a:hover {
   margin-bottom: 20px;
   color: #5d4037;
   text-align: center;
+    font-size: 20px;
+  line-height: 1.8;
+  color: #4b3621;
 }
 
 .card1-text {
-  font-size: 52px;
+  font-size: 50px;
   line-height: 1.6;
-  margin-bottom: 25px;
+  margin-bottom: 60px;
   text-align: center;
   font-weight: normal;
 }
@@ -144,11 +152,14 @@ header nav a:hover {
     margin: 0 auto;
   }
 }
-.hero {
-padding: 120px 30px;
-text-align: center;
-color: #705610;
-}
+.hero{
+      background: linear-gradient(0deg, rgba(111,78,55,0.08), rgba(176,139,101,0.02)), url('https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1400&q=60') center/cover no-repeat;
+      color: #ece2e2;
+      min-height: 90vh;
+      display:flex;
+      align-items:center;
+    }
+
 .hero h1 {
 font-size: 50px;
 margin: 0;
@@ -180,7 +191,7 @@ background: #573b12;
 padding: 30px;
 color: #fff;
 text-align: center;
-margin-top: 50px;
+margin-top: 200px;
 }
 
 #contact {
@@ -240,6 +251,7 @@ margin-top: 50px;
   color: #a3781b !important;
   line-height: 1.6;
 }
+
 </style>
 <body>
 <header>
@@ -253,12 +265,20 @@ margin-top: 50px;
     </nav>
 </header>
 <body>
-<section id="h" class="hero">
-    <h1 style="font-size: 30;" >Welcome to Coffee Aroma</h1>
-    <p style="font-size: 25px; color: #5e4607;">Your daily dose of caffeine and comfort.</p>
-    <p style="font-size: 25px; color: #7a5e2b;">Discover our rich blends and cozy atmosphere.</p>
-    <p style="font-size: 25px; color: #7a5e2b;">Brewed to perfection, just for you.</p>
-<div class ="container">
+<section id="home" class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="overlay">
+            <h1 class="display-6 fw-bold">Welcome to <span style="color:var(--accent);">Coffee Aroma</span></h1>
+            <p class="lead">Your daily dose of caffeine and comfort. Discover our rich blends and cozy atmosphere — brewed to perfection, just for you.</p>
+            <a href="#menu" class="btn btn-dark btn-lg me-2">View Menu</a>
+            <a href="#about" class="btn btn-outline-light btn-lg">About Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
     <div id="about" class="card1">
   <div class="card-content">
@@ -266,7 +286,7 @@ margin-top: 50px;
     <p class="card-text">
       At Coffee Aroma, we believe every cup tells a story. We started this space to share our passion for rich blends and comforting flavors. Our mission is to create a cozy environment where everyone feels at home.
     </p>
-    
+    <section>
     <div class="features1">
       <div class="feature-item">
         <span class="checkmark">✔️</span>
@@ -281,6 +301,7 @@ margin-top: 50px;
         <span>A calm, welcoming space to relax or work</span>
       </div>
     </div>
+    </section>
     
     <p class="card-footer">
       Visit us and taste the warmth.
@@ -341,29 +362,29 @@ margin-top: 50px;
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <h4>Contact Us</h4>
-          <p class="text-muted">Have a question or want to place an order? Send us a message.</p>
+          <h1>Contact Us</h1>
+          <p style="font-size: 30PX;"   class="text-muted">Have a question or want to place an order? Send us a message.</p>
           <form>
             <div class="mb-3">
-              <label class="form-label">Name</label>
+              <label style="font-size: 30PX;" class="form-label">Name</label>
               <input class="form-control" placeholder="Your name">
             </div>
             <div class="mb-3">
-              <label class="form-label">Email</label>
+              <label style="font-size: 30PX;" class="form-label">Email</label>
               <input type="email" class="form-control" placeholder="you@example.com">
             </div>
             <div class="mb-3">
-              <label class="form-label">Message</label>
-              <textarea class="form-control" rows="4" placeholder="How can we help?"></textarea>
+              <label style="font-size: 30PX;" class="form-label">Message</label>
+              <textarea class="form-control" rows="5" placeholder="How can we help?"></textarea>
             </div>
-            <button class="btn btn-primary">Send Message</button>
+            <button  style="font-size: 30PX; " class="btn btn-primary">Send Message</button>
           </form>
         </div>
         <div class="col-lg-6 mt-4 mt-lg-0">
-          <h5>Visit Us</h5>
-          <p class="text-muted">123 Coffee Street, Your City<br>Open daily: 8:00 AM - 8:00 PM</p>
+          <h1>Visit Us</h1>
+          <p style="font-size: 30px;" class="text-muted">123 Coffee Street, Your City<br>Open daily: 8:00 AM - 8:00 PM</p>
           <div class="ratio ratio-16x9">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019478186345!2d-122.4194156846811!3d37.77492927975979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5b2f3d0b%3A0x6d1d6f8b8a9d6a0a!2sCoffee!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe style="border:0; width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019478186345!2d-122.4194156846811!3d37.77492927975979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5b2f3d0b%3A0x6d1d6f8b8a9d6a0a!2sCoffee!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
         </div>
       </div>
