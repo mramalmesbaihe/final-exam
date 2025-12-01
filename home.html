@@ -17,8 +17,8 @@ background: #f1d1a7;
 color: #965d07;
 }
 header {
-    background: #9c7c41; 
-    padding: 5px 20px; 
+    background: hsl(39, 41%, 43%); 
+    padding: 0px 10px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,19 +28,19 @@ header {
     left: 0;
     width: 100%;
     box-sizing: border-box;
-    z-index: 1000;
+    z-index: 3000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
 }
 
 header nav {
     display: flex;
-    gap: 40px;
+    gap: 30px;
 }
 
 header nav a {
     color: #f8f8f8;
     text-decoration: none;
-    font-weight: 700; 
+    font-weight: bold; 
     font-size: 20px;
     padding: 0px 0; 
     transition: all 0.3s ease;
@@ -48,14 +48,14 @@ header nav a {
 }
 
 header nav a:hover {
-    color: #ffffff;
+    color: #000000;
 }
 
 .card1 {
- margin-top: 40px; /* مسافة بين الهيرو والكارد */
-  max-width: 900px;
+  margin-top: 40px;
+  max-width: 1200px;
   margin-left: auto;
-  margin-right: auto; /* يخليه بالنص */
+  margin-right: auto; 
   padding: 40px;
   box-sizing: border-box;
   width: 100%;
@@ -83,59 +83,9 @@ header nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.card1-title {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #5d4037;
-  text-align: center;
-    font-size: 20px;
-  line-height: 1.8;
-  color: #4b3621;
-}
-
-.card1-text {
-  font-size: 50px;
-  line-height: 1.6;
-  margin-bottom: 60px;
-  text-align: center;
-  font-weight: normal;
-}
-
-.features1 {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-bottom: 25px;
-}
-
-.feature1-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 15px;
-  text-align: left;
-  padding: 8px 0;
-}
-
-.checkmark {
-  font-size: 25px;
-  min-width: 2px;
-}
-
-.card1-footer {
-  font-size: 18px;
-  font-weight: bold;
-  color: #5d4037;
-  text-align: center;
-  margin-top: auto;
-  padding-top: 15px;
-}
-
+} 
 .card1:hover {
-  border: 1px solid black;
+  border: 1px solid rgb(235, 235, 235);
   transform: scale(1.05);
 }
 
@@ -143,7 +93,7 @@ header nav a:hover {
   transform: scale(0.95) rotateZ(1.7deg);
 }
 
-/* تحسينات للشاشات الصغيرة */
+
 @media (max-width: 520px) {
   .card {
     width: 90%;
@@ -153,15 +103,15 @@ header nav a:hover {
   }
 }
 .hero{
-      background: linear-gradient(0deg, rgba(111,78,55,0.08), rgba(176,139,101,0.02)), url('https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1400&q=60') center/cover no-repeat;
-      color: #ece2e2;
+      background: linear-gradient(0deg, rgba(111,78,55,0.08), rgba(176,139,101,0.02)), url('image/0.png') center/cover no-repeat;
+      color: #dad1d1;
       min-height: 90vh;
       display:flex;
       align-items:center;
     }
 
 .hero h1 {
-font-size: 50px;
+font-size: 60px;
 margin: 0;
 }
 .section-title {
@@ -172,7 +122,7 @@ margin-top: 30px;
 .cards {
 display: grid;
 grid-template-columns: repeat(4, 1fr);
-gap: 30px;
+gap: 20px;
 padding: 20px 40px;
 }
 .card {
@@ -259,21 +209,19 @@ margin-top: 200px;
     <nav>
     <a href="#h">Home</a>
     <a href="#about">About Us</a>
-    <a href="#drink">menu</a>
+    <a href ="#menu">menu</a>
     <a href="#contact">Contact Us</a>
     <a href="log in.html">log in</a>
     </nav>
 </header>
 <body>
-<section id="home" class="hero">
+<section id="h" class="hero">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
           <div class="overlay">
             <h1 class="display-6 fw-bold">Welcome to <span style="color:var(--accent);">Coffee Aroma</span></h1>
             <p class="lead">Your daily dose of caffeine and comfort. Discover our rich blends and cozy atmosphere — brewed to perfection, just for you.</p>
-            <a href="#menu" class="btn btn-dark btn-lg me-2">View Menu</a>
-            <a href="#about" class="btn btn-outline-light btn-lg">About Us</a>
           </div>
         </div>
       </div>
@@ -308,7 +256,7 @@ margin-top: 200px;
     </p>
   </div>
 </div>
-
+<section>
 <h2 style="font-size: 90px; font-family:serif;" ><center>Our offers</center></h2>  
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -332,7 +280,7 @@ margin-top: 200px;
 </div>
 </section>
 
-<h2 id ="drink" class="section-title">what we have?</h2>
+<h2 id ="menu" class="section-title">what we have?</h2>
 <section class="cards">
 <div class="card">
     <img src="image/4.jpg" />
@@ -377,7 +325,7 @@ margin-top: 200px;
               <label style="font-size: 30PX;" class="form-label">Message</label>
               <textarea class="form-control" rows="5" placeholder="How can we help?"></textarea>
             </div>
-            <button  style="font-size: 30PX; " class="btn btn-primary">Send Message</button>
+               <button style="font-size: 30PX; " class="btn btn-primary">Send Message</button>
           </form>
         </div>
         <div class="col-lg-6 mt-4 mt-lg-0">
