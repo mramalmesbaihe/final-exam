@@ -13,7 +13,6 @@ products = [
 print("Choose a product number:\n")
 for i, item in enumerate(products, start=1):
     print(f"{i} - {item[0]}")
-
 choice = int(input("\nEnter the number: "))
 
 if choice < 1 or choice > len(products):
